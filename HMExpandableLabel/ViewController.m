@@ -25,8 +25,8 @@
     label.font = [UIFont systemFontOfSize:15];
     label.packupLineCount = 4;
     label.expanded = NO;
-    label.expandLinkString = [[NSAttributedString alloc] initWithString:@"更多" attributes:@{NSForegroundColorAttributeName : [UIColor brownColor], NSFontAttributeName : label.font}];
-    label.packupLinkString = [[NSAttributedString alloc] initWithString:@"收起" attributes:@{NSForegroundColorAttributeName : [UIColor brownColor], NSFontAttributeName : label.font}];
+//    label.expandLinkString = [[NSAttributedString alloc] initWithString:@"更多" attributes:@{NSForegroundColorAttributeName : [UIColor brownColor], NSFontAttributeName : label.font}];
+//    label.packupLinkString = [[NSAttributedString alloc] initWithString:@"收起" attributes:@{NSForegroundColorAttributeName : [UIColor brownColor], NSFontAttributeName : label.font}];
     label.text = @"我们 On third line our text need be collapsed because we have ordinary text, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
     [self.view addSubview:label];
     label.delegate = self;

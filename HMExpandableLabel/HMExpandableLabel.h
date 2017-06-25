@@ -14,6 +14,10 @@
 
 @optional
 
+/**
+ * 如果没有使用自动布局，你需要在hmExpandableLabelDidExpand和hmExpandableLabelDidPackup
+ * sizeToFit来重新设置frame
+ */
 - (void)hmExpandableLabelDidExpand:(HMExpandableLabel *)label;
 - (void)hmExpandableLabelDidPackup:(HMExpandableLabel *)label;
 
@@ -30,9 +34,9 @@
 #pragma mark -
 
 @property (nonatomic, weak) id<HMExpandableLabelDelegate> delegate;
-@property (nonatomic, assign, getter=isExpanded) BOOL expanded;  // 是否展开，默认NO，收起状态
-@property (nonatomic, assign) NSInteger packupLineCount;        // 收起状态下显示的行数，默认为3
-@property (nonatomic, copy) NSAttributedString *packupLinkString;
-@property (nonatomic, copy) NSAttributedString *expandLinkString;
+@property (nonatomic, assign, getter=isExpanded) BOOL expanded;     // 是否展开，默认NO，收起状态
+@property (nonatomic, assign) NSInteger packupLineCount;            // 收起状态下显示的行数，默认为3
+@property (nonatomic, copy) NSAttributedString *packupLinkString;   // 展开状态下显示，默认显示"收起"
+@property (nonatomic, copy) NSAttributedString *expandLinkString;   // 收起状态下显示，默认显示"更多"
 
 @end
